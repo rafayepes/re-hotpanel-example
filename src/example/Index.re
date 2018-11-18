@@ -4,10 +4,18 @@ Hotpanel.(
   track(
     ViewProfileEvent(
       ViewProfileEvent.t(
-        ~encrypted_user_id=userId,
-        ~activation_place=ActivationPlaceEnum.ActivationPlaceDiscover,
+        ~encryptedUserId=userId,
+        ~activationPlace=ActivationPlaceEnum.ActivationPlaceDiscover,
         (),
       ),
+    ),
+  )
+);
+
+Hotpanel.(
+  track(
+    ActionEvent(
+      ActionEvent.t(~actionType=ActionTypeEnum.ActivationTypeClick, ()),
     ),
   )
 );

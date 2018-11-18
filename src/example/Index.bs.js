@@ -11,5 +11,9 @@ Hotpanel.track(/* ViewProfileEvent */Block.__(1, [{
           activation_place: /* ActivationPlaceDiscover */1
         }]));
 
+Hotpanel.track(/* ActionEvent */Block.__(0, [{
+          action_type: /* ActivationTypeClick */0
+        }]));
+
 exports.userId = userId;
 /*  Not a pure module */

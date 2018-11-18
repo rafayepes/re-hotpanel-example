@@ -13,18 +13,18 @@ module ActionTypeEnum = {
 module ViewProfileEvent = {
   [@bs.deriving abstract]
   type t = {
-    [@bs.optional]
-    encrypted_user_id: string,
-    [@bs.optional]
-    activation_place: ActivationPlaceEnum.t,
+    [@bs.optional] [@bs.as "encrypted_user_id"]
+    encryptedUserId: string,
+    [@bs.optional] [@bs.as "activation_place"]
+    activationPlace: ActivationPlaceEnum.t,
   };
 };
 
 module ActionEvent = {
   [@bs.deriving abstract]
   type t = {
-    [@bs.optional]
-    action_type: ActionTypeEnum.t,
+    [@bs.optional] [@bs.as "action_type"]
+    actionType: ActionTypeEnum.t,
   };
 };
 
