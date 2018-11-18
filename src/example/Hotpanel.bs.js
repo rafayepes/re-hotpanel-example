@@ -16,6 +16,12 @@ var Event = HotpanelProto.Event;
 
 var EventBody = HotpanelProto.EventBody;
 
+var eventToEventName = HotpanelAPI.eventToEventName;
+
+var stringifyEventBody = HotpanelAPI.stringifyEventBody;
+
+var sendBody = HotpanelAPI.sendBody;
+
 var track = HotpanelAPI.track;
 
 exports.ActivationPlaceEnum = ActivationPlaceEnum;
@@ -24,5 +30,8 @@ exports.ViewProfileEvent = ViewProfileEvent;
 exports.ActionEvent = ActionEvent;
 exports.Event = Event;
 exports.EventBody = EventBody;
+exports.eventToEventName = eventToEventName;
+exports.stringifyEventBody = stringifyEventBody;
+exports.sendBody = sendBody;
 exports.track = track;
 /* No side effect */
