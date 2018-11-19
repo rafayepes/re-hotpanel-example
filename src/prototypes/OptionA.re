@@ -37,14 +37,10 @@ trackViewProfileEvent({
 
 trackViewProfileEvent({
   encrypted_user_id: Some(userId),
-  activation_place: None /* activation_place: 3, */ /* Doesn't compile. Yay! */
+  activation_place: None,
 });
 
 trackViewProfileEvent({
   encrypted_user_id: Some(userId),
-  activation_place: None /* activation_place: ActionTypeEnum.ActivationTypeClick, */ /* Doesn't compile. Yay! */
-}) /* let userId2 = getUserId() + 1; */; /* Doesn't compile. Yay! */
-
-/* User ID, strings and numbers */
-
-/* let userId3 = getUserId() + ActivationPlaceEnum.ACTIVATION_PLACE_DISCOVER; /* Compiles =/; // Compiles =/ */ */
+  activation_place: None,
+});

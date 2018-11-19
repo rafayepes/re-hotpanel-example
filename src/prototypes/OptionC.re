@@ -43,26 +43,3 @@ trackViewProfileEvent({
   "encrypted_user_id": Some(userId),
   "activation_place": Some(ActivationPlaceEnum.ActivationPlaceDiscover),
 });
-
-/* trackViewProfileEvent(
-     ViewProfileEvent.t(
-     ~encrypted_user_id= Some(userId),
-     ~activation_place = Some(ActivationPlaceEnum.ActivationPlaceDiscover),
-     ()
-     )
-   ); */
-
-/* trackViewProfileEvent({
-     encrypted_user_id: Some(userId),
-     activation_place: Some(ActivationPlaceEnum.ActivationPlaceDiscover),
-   }); */
-
-/* trackViewProfileEvent({
-     encrypted_user_id: Some(userId),
-     activation_place: None /* activation_place: 3, */ /* Doesn't compile. Yay! */
-   });
-
-   trackViewProfileEvent({
-     encrypted_user_id: Some(userId),
-     activation_place: None /* activation_place: ActionTypeEnum.ActivationTypeClick, */ /* Doesn't compile. Yay! */
-   })  */
