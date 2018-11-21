@@ -1,0 +1,2 @@
+include HotpanelProto;
+include HotpanelAPI;
